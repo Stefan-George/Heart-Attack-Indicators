@@ -1,0 +1,45 @@
+Heart Attack Indicators Flowchart
+
+1. Problem Definition
+
+- Identify Problem: Identify the need for predicting heart attack risk to improve patient outcomes.
+- Define Objectives: Goals could include early detection, reducing hospital readmission rates.
+- Determine Success Criteria: Metrics such as precision, recall, F1-score, and ROC-AUC.
+
+2. Data Collection
+
+- Source Data: Collect from the CDC, survey data.
+- Data Accessibility: Ensure the data is properly formatted and accessible for analysis.
+
+Exploratory Data Analysis (EDA)
+
+- Understand Data Distribution: Visualize data distributions using histograms and box plots.
+- Identify Patterns: Use scatter plots and pair plots to identify relationships between variables.
+- Statistical Analysis: Perform correlation analysis to identify important features related to heart attack risk.
+
+Data Preprocessing
+
+- Data Cleaning: Handle missing values using imputation, remove duplicates, handle incorrect data.
+- Data Transformation: Encode categorical features using one-hot encoding or label encoding.
+- Preprocessing EDA: Look for colinearity and multicoliniarity in a datawide correlation matrix.
+
+Feature Engineering
+
+- Feature Selection: Select important features such as age, SmokerStatus, HadAngina.
+- Feature Transformation: Apply transformations to improve model performance, e.g., log transformation of skewed data.
+
+Model Selection
+
+- Choose Algorithms: Consider algorithms like logistic regression, decision trees, random forests and KNN.
+- Split Data: Divide data into training, validation, and test sets to evaluate model performance.
+
+Model Training
+
+- Train Model: Train chosen algorithms on the training dataset.
+- Hyperparameter Tuning: Use Grid Search or Random Search to find the best hyperparameters.
+
+Model Evaluation
+
+- Key Metric: Establish a key metric. (Recall)
+- Evaluate Performance: Use evaluation metrics like accuracy, precision, recall, F1-score, and ROC-AUC to assess model performance.
+- Cross-Validation: Perform cross-validation to ensure the model generalizes well to new data.
