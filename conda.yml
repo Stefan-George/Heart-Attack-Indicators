@@ -11,3 +11,4 @@ dependencies:
   - seaborn
   - plotly=4.12.0
   - bokeh=2.2.3
+  - imbalanced-learn 0.12.3
