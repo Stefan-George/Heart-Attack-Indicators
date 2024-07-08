@@ -32,6 +32,10 @@ It includes a simple folder structure and a conda environment for isolated depen
 
 ### Executive Summary
 
+This project aims to identify key indicators of heart attacks using survey data from the CDC's Behavioral Risk Factor Surveillance System (BRFSS). By leveraging various data science techniques, including data loading, exploratory data analysis, pre-processing, and machine learning modeling, we strive to uncover meaningful insights that can inform public health strategies for cardiovascular disease prevention.
+ 
+**Key Risk Factors in Heart Disease**
+
 *Heart Attack Indicators*
 
 Heart attacks or myocardial infarctions are a leading cause of morbidity and mortality worldwide. Understanding the indicators of a heart attack and risks associated with those factors is needed for early diagnosis, prevention and treatment. 
@@ -40,16 +44,11 @@ Heart attacks or myocardial infarctions are a leading cause of morbidity and mor
 
 There were 55.4 million deaths recorded in 2019 globally. 17.9 million died in 2019 from cardiovascular diseases 32% of global deaths and the number 1 reason for mortality in 2019. Since then, the instance of cardiovascular diseases has raised year on year by approximately 1.5 - 2 million on average from the recorded global data available. Which is due to several key indicators that have been researched and are known to increase the instance of cardiovascular disease. 
 
- 
-**Key Risk Factors in Heart Disease**
-
 *Demographic Factors*
 
 - Age: Higher ages are a risk factor, with higher incidence rates observed in older sexes. 
 
 - Sex: Males generally have a higher risk of heart attacks compared to females, though post-menopausal women also face increased risk. 
-
-- Race/Ethnicity: Certain racial and ethnic groups may have higher or lower risk profiles due to genetic and socio-economic factors. 
 
 *Medical History*
 
@@ -206,6 +205,8 @@ As the CDC is a governmental institution the data obtained have gone through rig
 
 `CovidPos:` Indicates if the respondent has ever tested positive for COVID-19. 
 
+
+
 ### Demo
 
 ... Show your work:
@@ -216,10 +217,62 @@ As the CDC is a governmental institution the data obtained have gone through rig
 
 ### Methodology
 
-... High-level diagrams of entire process:
-...     various data processing steps
-...     various modelling directions
-...     various prototyping directions
+**Project Structure**
+
+1. Data Loading
+Objective: To import and examine the dataset from the BRFSS, ensuring it is ready for subsequent analysis.
+
+Tasks:
+
+Import the heart_attack_enc_m.csv dataset.
+Conduct a preliminary inspection to understand the structure and types of variables.
+
+2. Exploratory Data Analysis (EDA)
+Objective: To explore and understand the data's underlying patterns, distributions, and relationships.
+
+Tasks:
+
+Data inspection to identify missing values and anomalies.
+Descriptive statistics to summarize the central tendencies and dispersions.
+Univariate analysis to examine individual variable distributions.
+Bivariate analysis to explore relationships between pairs of variables using correlation matrices, cross-tabulations, and visualizations.
+
+3. Pre-processing
+Objective: To transform the dataset into a format suitable for machine learning modeling.
+
+Tasks:
+
+Apply binary encoding for binary categorical variables (No as 0.0, Yes as 1.0).
+Apply ordinal encoding for ordinal variables, reflecting the order of severity.
+Normalize and scale numerical variables.
+Handle any remaining missing values using suitable imputation methods.
+
+4. Modelling
+Objective: To develop and evaluate various machine learning models to predict heart attack risk.
+
+Tasks:
+
+Implement and compare multiple machine learning algorithms: Logistic Regression, Decision Trees, Random Forests, k-Nearest Neighbors (k-NN), XGBoost, SMOTE Logistic Regression, and One Feature Removed Logistic Regression.
+Train and validate models using training and validation datasets.
+Optimize hyperparameters to enhance model performance.
+Evaluate models using metrics such as accuracy, precision, recall, F1-score, and AUC-ROC.
+Interpret model results to identify significant predictors of heart attacks.
+
+5. Findings
+Objective: To summarize the insights gained from the modeling phase and identify the best-performing models.
+
+Tasks:
+
+Compile the performance metrics of each model.
+Highlight key indicators of heart attacks identified by the models.
+Discuss the implications of these findings for public health strategies.
+Appendix
+Objective: To document any additional analyses or information that supports the main narrative of the project.
+
+Tasks:
+
+Include supplementary analyses that provide deeper insights or validate the main findings.
+Document any additional exploratory work or feature engineering steps that were considered.
 
 
 ### Organization
@@ -262,10 +315,10 @@ As the CDC is a governmental institution the data obtained have gone through rig
 
 #### Dataset
 
-... Google Drive links to datasets and pickeled models
+[... Google Drive links to datasets and pickeled models](https://drive.google.com/drive/folders/1oelthiRJcGF24SZ-952hYRCMBk832qkX?usp=drive_link)
 
 ### Credits & References
 
-... Include any personal learning
+
 
 ------------------------------------------------------------------------------

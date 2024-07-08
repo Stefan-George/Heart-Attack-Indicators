@@ -1,5 +1,5 @@
 channels:
-  - defaults
+  - Capstone Conda Environment (capstone)
 dependencies:
   - jupyter
   - jupyterlab
